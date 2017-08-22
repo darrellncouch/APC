@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Attendance Percentage Calulator</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Khand" rel="stylesheet">
+
+        <!-- temp stylesheet -->
+        <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="jt" class="top-well">
+              <div class="jumbotron text-center fadeIn">
+                <h1 class="fadeInLeft">Attendance Percentage Calculator</h1>
+                  <hr class="divider">
+                  <p id="warn" class="fadeInRight"><span class="glyphicon glyphicon-asterisk"></span>A tool to help you keep your bonuses!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading text-center title">Points Earned</div>
+            <div class="panel-body text-center">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Points Earned" id="pe">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading text-center title">Points Possible</div>
+            <div class="panel-body text-center">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Points Possible" id="pp">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading text-center title">PRESS THE BUTTON!</div>
+            <div class="panel-body text-center">
+              <div class="form-group">
+                <button type="button" class="btn btn-default" id="btn">Calculate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <h2 class="text-center">Loosing 0 Points:</h2>
+          <hr class="divider">
+            <div class="text-center">
+              <h1 id="0p"></h1>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <h2 class="text-center">Loosing 1 Point:</h2>
+          <hr class="divider">
+            <div class="text-center">
+              <h1 id="1p"></h1>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <h2 class="text-center">Loosing 2 Points:</h2>
+          <hr class="divider">
+            <div class="text-center">
+              <h1 id="2p"></h1>
+            </div>
+         </div>
+      </div>
+      <div class="warn">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+          <p></p>
+        </div>
+
+    <script src="scripts.js"></script>
+
+  </body>
+</html>
