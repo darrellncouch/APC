@@ -1,6 +1,6 @@
 body {
   font-family: 'Khand', sans-serif;
-  background: #457fca;  fallback for old browsers */
+  background: #457fca;  fallback for old browsers */ -->
  background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
@@ -105,15 +105,25 @@ transform: none;
  }
 
 .warn {
-    padding: 20px;
+    padding: 5px;
     background-color: #ef8b8b;
     color: white;
     position: fixed;
-    bottom: 5;
+    bottom: 0;
     right: 0;
     display: none;
-    z-index: 999999;
-
+    z-index: 10;
+    margin: 5px;
+    margin-right: 8px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    width: 350px;
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 .closebtn {
@@ -121,7 +131,9 @@ transform: none;
     color: white;
     font-weight: bold;
     float: right;
-    font-size: 22px;
+    margin-top: 13px;
+    margin-right: 2px;
+    font-size: 44px;
     line-height: 20px;
     cursor: pointer;
     transition: 0.3s;
@@ -129,4 +141,21 @@ transform: none;
 
 .closebtn:hover {
     color: black;
+}
+.warntext{
+  margin-top: 11px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+.btn{
+  width: 95%;
+
+
+  background-color: white;
+  border: solid, 1px;
+  border-color: gray;
+}
+.btn:hover{
+  background-color: grey;
+  color: white;
 }
