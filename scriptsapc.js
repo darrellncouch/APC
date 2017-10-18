@@ -15,25 +15,11 @@
     var p0 = (pe / pp) * 100;
 
     //if answer is less than 100 round to the nearist 100th, else keep whole number
-    if(p1 < 100) {
-      p1 = p1.toFixed(2);
-    }
-    else {
-      p1 = p1;
-    }
-    if(p2 < 100) {
-      p2 = p2.toFixed(2);
-    }
-    else {
-      p2 = p2;
-    }
-    if (p0 < 100) {
-      p0 = p0.toFixed(2);
-    }
-    else {
-      p0 = p0;
-    }
+    p1 < 100 ? p1 = p1.toFixed(2) : p1 = p1;
 
+    p2 < 100 ? p2 = p2.toFixed(2) : p2 = p2;
+
+    p0 < 100 ? p0 = p0.toFixed(2) : p0 = p0;
 
     //writes to document and adds percentage
     document.getElementById("1p").innerHTML = p1 + "%";
